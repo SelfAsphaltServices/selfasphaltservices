@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Self's Asphalt Services</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: #111; /* Asphalt-like black */
+      color: #f4f4f4;
+    }
+    header {
+      background: #000;
+      color: #FFD700; /* Yellow accent */
+      padding: 2rem 1rem;
+      text-align: center;
+      border-bottom: 5px solid #FFD700;
+    }
+    header img {
+      max-width: 150px;
+      margin-bottom: 1rem;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.8rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #ddd;
+    }
+    nav {
+      margin-top: 1rem;
+    }
+    nav a {
+      color: #FFD700;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: #fff;
+    }
+    section {
+      padding: 3rem 1rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .services, .about, .extra, .contact {
+      background: #1c1c1c;
+      margin-bottom: 2rem;
+      padding: 2rem;
+      border-radius: 10px;
+      border: 2px solid #FFD700;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.7);
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      color: #FFD700;
+    }
+    .service-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+    .service-item {
+      padding: 1rem;
+      background: #000;
+      border: 1px solid #FFD700;
+      border-radius: 8px;
+      text-align: center;
+      color: #FFD700;
+      font-weight: bold;
+    }
+    .contact form {
+      display: flex;
+      flex-direction: column;
+    }
+    .contact input, .contact textarea, .contact button {
+      margin: 0.5rem 0;
+      padding: 0.8rem;
+      font-size: 1rem;
+      border: 1px solid #FFD700;
+      border-radius: 5px;
+      background: #000;
+      color: #FFD700;
+    }
+    .contact input::placeholder,
+    .contact textarea::placeholder {
+      color: #bbb;
+    }
+    .contact button {
+      background: #FFD700;
+      color: #000;
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .contact button:hover {
+      background: #e6c200;
+    }
+    .call-email {
+      text-align: center;
+      margin-top: 1rem;
+    }
+    .call-email a {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 0.7rem 1.2rem;
+      background: #FFD700;
+      color: #000;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .call-email a:hover {
+      background: #e6c200;
+    }
+    footer {
+      background: #000;
+      color: #FFD700;
+      text-align: center;
+      padding: 1rem;
+      border-top: 5px solid #FFD700;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <!-- Replace logo.png with your company logo file -->
+    <h1>Self Asphalt Services</h1>
+    <p>Reliable Paving & Asphalt Repair — Quality You Can Trust</p>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#extra">More Info</a>
+      <a href="#contact">Free Quote</a>
+    </nav>
+  </header>
+
+  <section id="services" class="services">
+    <h2>Our Services</h2>
+    <div class="service-list">
+      <div class="service-item">Asphalt Paving</div>
+      <div class="service-item">Driveway Repair</div>
+      <div class="service-item">Pothole Patching</div>
+      <div class="service-item">Crack Filling</div>
+      <div class="service-item">Commercial Lots</div>
+      <div class="service-item">Residential Projects</div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>
+      At Self Asphalt Services, we provide top-quality paving solutions for driveways, parking lots, and roads.
+      With years of experience and a commitment to excellence, we ensure long-lasting results that stand the test of time.
+    </p>
+  </section>
+
+  <section id="extra" class="extra">
+    <h2>No Job too Big, No Job too Small</h2>
+    <p>
+      <!-- You can put anything here: customer reviews, guarantees, project gallery, or other details -->
+      Wether you have a tiny pothole that needs patched or an enire driveway to pave, you will recieve superior quality from us no matter the job. Contact us to schedule your free estimate today.
+    </p>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Request a Free Quote</h2>
+    <!-- Replace YOUR_FORM_ID with your Formspree endpoint -->
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <input type="tel" name="phone" placeholder="Your Phone Number">
+      <textarea name="message" rows="5" placeholder="Tell us about your project..." required></textarea>
+      <button type="submit">Send Request</button>
+    </form>
+    <div class="call-email">
+      <a href="tel:+18287353620">📞 Call Us</a>
+      <a href="mailto:SelfAsphaltServices@gmail.com">✉️ Email Us</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Self Asphalt Services | All Rights Reserved</p>
+  </footer>
+</body>
+</html>
